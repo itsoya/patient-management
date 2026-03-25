@@ -25,7 +25,7 @@ public class Patient {
     private String patientAddress;
 
     @NotNull
-    private LocalDate patientBirthday;
+    private LocalDate patientDateOfBirth;
 
     @NotNull
     private LocalDate registerDate;
@@ -62,12 +62,12 @@ public class Patient {
         this.patientAddress = patientAddress;
     }
 
-    public LocalDate getPatientBirthday() {
-        return patientBirthday;
+    public LocalDate getPatientDateOfBirth() {
+        return patientDateOfBirth;
     }
 
-    public void setPatientBirthday(LocalDate patientBirthday) {
-        this.patientBirthday = patientBirthday;
+    public void setPatientDateOfBirth(LocalDate patientDateOfBirth) {
+        this.patientDateOfBirth = patientDateOfBirth;
     }
 
     public LocalDate getRegisterDate() {
