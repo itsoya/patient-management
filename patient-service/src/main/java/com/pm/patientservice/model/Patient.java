@@ -11,23 +11,28 @@ import java.util.UUID;
 public class Patient {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+    @Column(name = "id")
     private UUID patientId;
 
     @NotNull
+    @Column(name = "name")
     private String patientName;
 
     @NotNull
     @Email
-    @Column(unique = true)
+    @Column(unique = true, name = "email")
     private String patientEmail;
 
     @NotNull
+    @Column(name = "address")
     private String patientAddress;
 
     @NotNull
+    @Column(name = "date_of_birth")
     private LocalDate patientDateOfBirth;
 
     @NotNull
+    @Column(name = "registered_date")
     private LocalDate registerDate;
 
     public UUID getPatientId() {
