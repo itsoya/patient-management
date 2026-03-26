@@ -21,7 +21,7 @@ public class Patient {
     @NotNull
     @Email
     @Column(unique = true, name = "email")
-    private String patientEmail;
+    private String email;
 
     @NotNull
     @Column(name = "address")
@@ -52,11 +52,11 @@ public class Patient {
     }
 
     public String getPatientEmail() {
-        return patientEmail;
+        return email;
     }
 
     public void setPatientEmail(String patientEmail) {
-        this.patientEmail = patientEmail;
+        this.email = patientEmail;
     }
 
     public String getPatientAddress() {
