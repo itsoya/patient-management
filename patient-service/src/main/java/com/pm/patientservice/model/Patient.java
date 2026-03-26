@@ -10,9 +10,9 @@ import java.util.UUID;
 @Entity
 public class Patient {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.UUID)
     @Column(name = "id")
-    private UUID patientId;
+    private UUID id;
 
     @NotNull
     @Column(name = "name")
@@ -36,11 +36,11 @@ public class Patient {
     private LocalDate registerDate;
 
     public UUID getPatientId() {
-        return patientId;
+        return id;
     }
 
     public void setPatientId(UUID patientId) {
-        this.patientId = patientId;
+        this.id = patientId;
     }
 
     public String getPatientName() {
