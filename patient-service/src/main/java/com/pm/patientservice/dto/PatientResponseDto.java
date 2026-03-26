@@ -1,9 +1,5 @@
 package com.pm.patientservice.dto;
 
-import com.pm.patientservice.model.Patient;
-
-import java.util.List;
-
 public class PatientResponseDto {
     private  String id;
     private  String name;

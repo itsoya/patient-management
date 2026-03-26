@@ -2,9 +2,6 @@ package com.pm.patientservice.controller;
 
 import com.pm.patientservice.dto.PatientRequestDto;
 import com.pm.patientservice.dto.PatientResponseDto;
-import com.pm.patientservice.dto.validator.CreatePatientValidationGroup;
-import com.pm.patientservice.model.Patient;
-import com.pm.patientservice.repository.PatientRepository;
 import com.pm.patientservice.service.PatientService;
 import jakarta.validation.Valid;
 import jakarta.validation.groups.Default;
